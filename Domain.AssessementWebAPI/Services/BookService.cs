@@ -31,14 +31,19 @@ namespace Domain.AssessementWebAPI.Services
             return book;
         }
 
-        public Task UpdateBook(Book book)
+        public async Task UpdateBook(Book book)
         {
-            throw new System.NotImplementedException();
+            await BookRepository.Update(book);
         }
 
         public async Task DeleteBook(Book book)
         {
             await BookRepository.Delete(book);
+        }       
+
+        public bool BookExists(int id)
+        {
+            return BookRepository.BookExists(id);
         }
     }
 }

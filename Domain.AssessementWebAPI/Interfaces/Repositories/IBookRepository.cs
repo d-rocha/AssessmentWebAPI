@@ -11,5 +11,6 @@ namespace Domain.AssessementWebAPI.Interfaces.Repositories
         Task<Book> ReadById(int id);
         Task Update(Book book);
         Task Delete(Book book);
+        bool BookExists(int id);
     }
 }

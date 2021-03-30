@@ -55,8 +55,6 @@ namespace API.AssessementWebAPI.Controllers
             authorUpdate.FirstName = author.FirstName;
             authorUpdate.LastName = author.LastName;
 
-            await AuthorService.UpdateAuthor(authorUpdate);
-
             try
             {
                 await AuthorService.UpdateAuthor(authorUpdate);

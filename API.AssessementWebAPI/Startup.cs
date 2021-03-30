@@ -2,13 +2,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Domain.AssessementWebAPI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Infrastrucuture.AssessementWebAPI.DataBase;
 using Infrastrucuture.AssessementWebAPI.Repository;
 using Domain.AssessementWebAPI.Interfaces.Services;
 using Domain.AssessementWebAPI.Interfaces.Repositories;
-using Domain.AssessementWebAPI.Services;
 
 namespace API.AssessementWebAPI
 {
@@ -34,7 +34,7 @@ namespace API.AssessementWebAPI
             services.AddDbContext<DataBaseAccess>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("AssessmentWebAPI"));
-            });            
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

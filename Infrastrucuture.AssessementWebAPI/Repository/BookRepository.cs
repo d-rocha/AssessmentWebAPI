@@ -66,5 +66,10 @@ namespace Infrastrucuture.AssessementWebAPI.Repository
             _dataBaseAccess.Books.Remove(book);
             await _dataBaseAccess.SaveChangesAsync();
         }
+
+        public bool BookExists(int id)
+        {
+            return _dataBaseAccess.Books.Any(book => book.Id == id);
+        }
     }
 }

@@ -1,10 +1,11 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Domain.AssessementWebAPI.Entities;
 using Domain.AssessementWebAPI.Interfaces.Services;
+using Infrastrucuture.AssessementWebAPI.DataBase;
 
 namespace API.AssessementWebAPI.Controllers
 {
@@ -15,10 +16,13 @@ namespace API.AssessementWebAPI.Controllers
         public IBookService BookService { get; }
         public IAuthorService AuthorService { get; }
 
-        public BooksController(IBookService bookService, IAuthorService authorService)
+        private readonly DataBaseAccess _dataBaseAccess;
+
+        public BooksController(IBookService bookService, IAuthorService authorService, DataBaseAccess dataBaseAccess)
         {
             BookService = bookService;
-            AuthorService = authorService;            
+            AuthorService = authorService;
+            _dataBaseAccess = dataBaseAccess;
         }       
 
         [HttpGet]
@@ -26,7 +30,6 @@ namespace API.AssessementWebAPI.Controllers
         {
             return await BookService.ListAllBooks();
         }
-
         
         [HttpGet("{id}")]
         public async Task<ActionResult<Book>> GetBook(int id)
@@ -43,7 +46,6 @@ namespace API.AssessementWebAPI.Controllers
         public async Task<ActionResult<Book>> CreateNewBook(BookBind bookBind)
         {
             var authors = await AuthorService.ListAllAuthors();
-
             bookBind.Author = authors.FirstOrDefault(x => x.Id == bookBind.Author.Id);
 
             Book book = new Book()
@@ -61,8 +63,7 @@ namespace API.AssessementWebAPI.Controllers
         
         [HttpPut("{id}")]
         public async Task<IActionResult> EditBook(int id, Book book)
-        {
-            book.Id = id;
+        {   
             if (id != book.Id)
                 return BadRequest();
 
@@ -71,11 +72,23 @@ namespace API.AssessementWebAPI.Controllers
             bookUpdate.Title = book.Title;
             bookUpdate.Year = book.Year;
 
-            await BookService.UpdateBook(bookUpdate);
-
-            return CreatedAtAction("GetBook", bookUpdate);
+            try
+            {
+                await BookService.UpdateBook(bookUpdate);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!BookService.BookExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return NoContent();
         }
-
         
         [HttpDelete("{id}")]
         public async Task<ActionResult<Book>> Delete(int id)
