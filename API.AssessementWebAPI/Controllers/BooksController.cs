@@ -16,13 +16,10 @@ namespace API.AssessementWebAPI.Controllers
         public IBookService BookService { get; }
         public IAuthorService AuthorService { get; }
 
-        private readonly DataBaseAccess _dataBaseAccess;
-
-        public BooksController(IBookService bookService, IAuthorService authorService, DataBaseAccess dataBaseAccess)
+        public BooksController(IBookService bookService, IAuthorService authorService)
         {
             BookService = bookService;
-            AuthorService = authorService;
-            _dataBaseAccess = dataBaseAccess;
+            AuthorService = authorService;            
         }       
 
         [HttpGet]
