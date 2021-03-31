@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \r\n    \"Isbn\": \"98465464\",\r\n    \"Year\": \"2021\",\r\n    \"Title\": \"Teste\",\r\n    \"Author\": {\r\n        \"id\": 7,\r\n        \"firstName\": \"Davi\",\r\n        \"lastName\": \"Rocha\",\r\n        \"books\": []\r\n    }       \r\n}",
+					"raw": "{   \r\n    \"Isbn\": \"98465464\",\r\n    \"Year\": \"2021\",\r\n    \"Title\": \"Teste\",\r\n    \"Author\": {\r\n        \"id\": 1,\r\n        \"firstName\": \"Davi\",\r\n        \"lastName\": \"Rocha\",\r\n        \"email\": \"davi.oliveira@al.infnet.edu.br\",\r\n        \"dob\": \"06/04/1988\",\r\n        \"books\": []\r\n    }       \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

@@ -54,6 +54,8 @@ namespace API.AssessementWebAPI.Controllers
 
             authorUpdate.FirstName = author.FirstName;
             authorUpdate.LastName = author.LastName;
+            authorUpdate.Email = author.Email;
+            authorUpdate.Dob = author.Dob;
 
             try
             {

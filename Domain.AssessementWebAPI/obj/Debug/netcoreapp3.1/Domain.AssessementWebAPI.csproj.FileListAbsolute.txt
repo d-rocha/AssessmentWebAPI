@@ -1,0 +1,8 @@
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\bin\Debug\netcoreapp3.1\Domain.AssessementWebAPI.deps.json
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\bin\Debug\netcoreapp3.1\Domain.AssessementWebAPI.dll
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\bin\Debug\netcoreapp3.1\Domain.AssessementWebAPI.pdb
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\obj\Debug\netcoreapp3.1\Domain.AssessementWebAPI.AssemblyInfoInputs.cache
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\obj\Debug\netcoreapp3.1\Domain.AssessementWebAPI.AssemblyInfo.cs
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\obj\Debug\netcoreapp3.1\Domain.AssessementWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\obj\Debug\netcoreapp3.1\Domain.AssessementWebAPI.dll
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Domain.AssessementWebAPI\obj\Debug\netcoreapp3.1\Domain.AssessementWebAPI.pdb

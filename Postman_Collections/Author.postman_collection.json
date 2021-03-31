@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\t\r\n\t\"FirstName\": \"Davi\",\r\n\t\"LastName\": \"Rocha\"    \r\n}",
+					"raw": "{\t\r\n\t\"FirstName\": \"Davi\",\r\n\t\"LastName\": \"Rocha\",\r\n    \"Email\": \"davi.oliveira@al.infnet.edu.br\",\r\n    \"Dob\": \"06/04/1988\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -74,7 +74,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:5001/api/authors/7",
+					"raw": "https://localhost:5001/api/authors/1",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -83,7 +83,7 @@
 					"path": [
 						"api",
 						"authors",
-						"7"
+						"1"
 					]
 				}
 			},

@@ -1,0 +1,15 @@
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.deps.json
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.runtimeconfig.json
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.runtimeconfig.dev.json
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.dll
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.pdb
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Domain.AssessementWebAPI.dll
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\bin\Debug\netcoreapp3.1\Domain.AssessementWebAPI.pdb
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.csprojAssemblyReference.cache
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.AssemblyInfoInputs.cache
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.AssemblyInfo.cs
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.csproj.CopyComplete
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.dll
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.pdb
+C:\Users\droli\Downloads\INFNET\AssessmentWebAPI\Infrastrucuture.AssessementWebAPI\obj\Debug\netcoreapp3.1\Infrastrucuture.AssessementWebAPI.genruntimeconfig.cache
